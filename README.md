@@ -2,7 +2,8 @@
 
 ## 📂 Daftar Isi Folder
    - Login
-   - Logi
+   - Dashboard
+   - Katalog
 ---
 
 ## Tech Stack
