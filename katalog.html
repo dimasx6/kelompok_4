@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Konter Unieq</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffccdd;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            background: linear-gradient(45deg, #d63384, #ff6699);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+        }
+        h2 {
+            text-align: center;
+            color: #d63384;
+            font-size: 24px;
+        }
+        .product {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px;
+            background: #ffe6ee;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .product-item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            flex: 0 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .order-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .order-button, .cart-button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .order-button:hover, .cart-button:hover {
+            background: #b0296b;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+        .popup button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function togglePopup(id) {
+            var popup = document.getElementById(id);
+            popup.style.display = (popup.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Konter Unieq ✨</h1>
+        <p>Menjual berbagai macam produk elektronik dan kebutuhan komunikasi seperti HP, pulsa, dan aksesori.</p>
+        
+        <h2>Produk Kami</h2>
+        
+        <div class="product">
+            <h3>Handphone</h3>
+            <div class="product-list">
+                <div class="product-item"><img src="samsung.jpg" alt="Samsung"><p>Samsung Galaxy S23</p><p>Rp 15.000.000</p></div>
+                <div class="product-item"><img src="iphone.jpg" alt="iPhone"><p>iPhone 14 Pro</p><p>Rp 20.000.000</p></div>
+                <div class="product-item"><img src="oppo.jpg" alt="Oppo"><p>Oppo Reno 8</p><p>Rp 8.000.000</p></div>
+            </div>
+        </div>
+        
+        <div class="product">
+            <h3>Pulsa</h3>
+            <div class="product-list">
+                <div class="product-item"><img src="telkomsel.jpg" alt="Telkomsel"><p>Pulsa Telkomsel</p><p>Rp 10.000 - Rp 100.000</p></div>
+                <div class="product-item"><img src="xl.jpg" alt="XL"><p>Pulsa XL</p><p>Rp 10.000 - Rp 100.000</p></div>
+                <div class="product-item"><img src="tri.jpg" alt="Tri"><p>Pulsa Tri</p><p>Rp 10.000 - Rp 100.000</p></div>
+            </div>
+        </div>
+        
+        <div class="product">
+            <h3>Aksesori</h3>
+            <div class="product-list">
+                <div class="product-item"><img src="charger.jpg" alt="Charger"><p>Charger Fast Charging</p><p>Rp 150.000</p></div>
+                <div class="product-item"><img src="headset.jpg" alt="Headset"><p>Headset Bluetooth</p><p>Rp 250.000</p></div>
+                <div class="product-item"><img src="powerbank.jpg" alt="Powerbank"><p>Powerbank 10.000mAh</p><p>Rp 300.000</p></div>
+            </div>
+        </div>
+        
+        <div class="order-section">
+            <button class="cart-button" onclick="togglePopup('cartPopup')">🛒 Keranjang</button>
+            <button class="order-button" onclick="togglePopup('orderPopup')">📦 Pesan Sekarang</button>
+        </div>
+        
+        <div id="cartPopup" class="popup">
+            <h3>🛒 Keranjang Belanja</h3>
+            <p>Belum ada item di keranjang.</p>
+            <button onclick="togglePopup('cartPopup')">Tutup</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
