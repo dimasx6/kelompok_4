@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f4f6f9;
+}
+
+.sidebar {
+  width: 250px;
+  background: #ff4081;
+  padding: 20px;
+  color: white;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+  background: white;
+  color: #ff4081;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+}
+
+.search-box {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  background: #e73370;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: #ff4081;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 12px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.detail {
+  background: #17a2b8;
+  color: white;
+}
+
+.edit {
+  background: #28a745;
+  color: white;
+}
+
+.delete {
+  background: #dc3545;
+  color: white;
+}

@@ -1,45 +1,45 @@
-# Kelompok 4
+# 🚀 Konter Unieq — Group 4
 
-## 📂 Daftar Isi Folder
-
----
-
-## Tech Stack
-![Database](https://img.shields.io/badge/database-MySQL-green) ![Framework](https://img.shields.io/badge/framework-Yii2-blue) ![Language](https://img.shields.io/badge/language-PHP-blue) ![Environment](https://img.shields.io/badge/environment-XAMPP-orange) ![Dependencies](https://img.shields.io/badge/dependencies-Composer-yellow)
+A web-based system for managing a mobile phone credit and accessories store, streamlining transactions, product catalogs, and purchase history.
 
 ---
 
-## Documentation
-For detailed documentation, refer to the files linked below (written in Indonesian):
+## 📂 Project Structure
 
-- 📘 [..](#)
-- 📙 [..](#)
-- 📗 [..](#)
-- 📕 [..](#)
+This repository consists of several main branches representing different features:
+
+- **🌍 `main`** → The primary branch containing the stable version.
+- **🔐 `fitur/login`** → User authentication system.
+- **📊 `fitur/dashboard`** → Overview with transaction statistics.
+- **🛒 `fitur/katalog`** → Catalog of mobile credit, data packages, and accessories.
+- **📜 `fitur/riwayat-transaksi`** → Displays past transactions.
+- **💳 `fitur/pembelian`** → Purchase processing feature.
 
 ---
 
 ## 🤝 Contributors
-| Contributor       | GitHub Profile                                  |
-|-------------------|------------------------------------------------|
-| **Dimas Firstya**  | [🌐 Profile](https://github.com/dimasx6) |
-| **Anasrul Khotama** | [🌐 Profile](https://github.com/anasrulgit)    |
-| **Isnani Masitoh** | [🌐 Profile](https://github.com/isnanimasitoh17)    |
+
+| Name                | GitHub Profile                                   |
+| ------------------- | ------------------------------------------------ |
+| **Dimas Firstya**   | [🌐 Profile](https://github.com/dimasx6)         |
+| **Anasrul Khotama** | [🌐 Profile](https://github.com/anasrulgit)      |
+| **Isnani Masitoh**  | [🌐 Profile](https://github.com/isnanimasitoh17) |
 
 ---
 
-## 📝 Deskripsi
-This repository is the collaborative work of **Kelompok 2** for the **UAS Project**. It includes:
-- 📌 [...]
+## ✨ Features
 
-We hope this repository provides a clear understanding of our project. 😊
+✅ **User Authentication & Management**  
+✅ **Interactive Dashboard with Statistics**  
+✅ **Product & Service Catalog**  
+✅ **Transaction History**  
+✅ **Purchase Processing**
 
 ---
 
-## 🚀 How to Use
+## 📖 How to Use
+
 1. Clone this repository locally:
    ```bash
    git clone https://github.com/dimasx6/kelompok_4
    ```
-2. Open the document files in the "..." folder.
-3. Follow the system usage manual for further information.
