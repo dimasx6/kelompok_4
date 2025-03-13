@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uneq - Dashboard</title>
-    <link rel="stylesheet" href="stye.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="stye.css" />
+  </head>
+  <body>
     <div class="container">
+<<<<<<< HEAD
         <!-- Sidebar -->
         <nav class="sidebar">
             <div class="logo">Uneq</div>
@@ -21,73 +21,86 @@
                 <li><a href="#">Pengaturan</a></li>
             </ul>
         </nav>
+=======
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="logo">Uneq</div>
+        <ul class="nav-links">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Transaksi</a></li>
+          <li>
+            <a href="/riwayat-transaksi/riwayat_transaksi.html">Riwayat</a>
+          </li>
+          <li><a href="#">Stok Produk</a></li>
+          <li><a href="#">Pengaturan</a></li>
+        </ul>
+      </nav>
+>>>>>>> 8f136849ffb4155b733783094e8304eea8e70aa4
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <header class="header">
-                <h2>Dashboard</h2>
-                <div class="filter-section">
-                    <label for="start-date">Dari Tanggal:</label>
-                    <input type="date" id="start-date">
-                    <label for="end-date">Sampai Tanggal:</label>
-                    <input type="date" id="end-date">
-                    <button id="filter-btn">Filter</button>
-                </div>
-            </header>
+      <!-- Main Content -->
+      <div class="main-content">
+        <header class="header">
+          <h2>Dashboard</h2>
+          <div class="filter-section">
+            <label for="start-date">Dari Tanggal:</label>
+            <input type="date" id="start-date" />
+            <label for="end-date">Sampai Tanggal:</label>
+            <input type="date" id="end-date" />
+            <button id="filter-btn">Filter</button>
+          </div>
+        </header>
 
-            <!-- Statistik -->
-            <section class="stats-container">
-                <div class="stat-card">
-                    <h3>Total Penjualan</h3>
-                    <p>Rp 1.580.000</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Total Transaksi</h3>
-                    <p>77</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Produk Paling Laris</h3>
-                    <p>Voucher Axis 1GB 5hr</p>
-                </div>
-            </section>
+        <!-- Statistik -->
+        <section class="stats-container">
+          <div class="stat-card">
+            <h3>Total Penjualan</h3>
+            <p>Rp 1.580.000</p>
+          </div>
+          <div class="stat-card">
+            <h3>Total Transaksi</h3>
+            <p>77</p>
+          </div>
+          <div class="stat-card">
+            <h3>Produk Paling Laris</h3>
+            <p>Voucher Axis 1GB 5hr</p>
+          </div>
+        </section>
 
-           
-
-            <!-- Tabel Transaksi -->
-            <section class="transaction-section">
-                <h3>Transaksi Terbaru</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>ID Transaksi</th>
-                            <th>Tanggal</th>
-                            <th>Total Harga</th>
-                            <th>Metode</th>
-                            <th>Pengguna</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>77</td>
-                            <td>06/03/2025</td>
-                            <td>Rp 11.000</td>
-                            <td>QRIS</td>
-                            <td>Admin</td>
-                            <td>
-                                <button class="edit-btn">Edit</button>
-                                <button class="delete-btn">Hapus</button>
-                            </td>
-                        </tr>
-                        <!-- Tambahkan data lainnya -->
-                    </tbody>
-                </table>
-            </section>
-        </div>
+        <!-- Tabel Transaksi -->
+        <section class="transaction-section">
+          <h3>Transaksi Terbaru</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>ID Transaksi</th>
+                <th>Tanggal</th>
+                <th>Total Harga</th>
+                <th>Metode</th>
+                <th>Pengguna</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>77</td>
+                <td>06/03/2025</td>
+                <td>Rp 11.000</td>
+                <td>QRIS</td>
+                <td>Admin</td>
+                <td>
+                  <button class="edit-btn">Edit</button>
+                  <button class="delete-btn">Hapus</button>
+                </td>
+              </tr>
+              <!-- Tambahkan data lainnya -->
+            </tbody>
+          </table>
+        </section>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
