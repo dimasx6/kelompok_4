@@ -13,7 +13,6 @@
             background-color: #f4f4f4;
             display: flex;
         }
-        /* Sidebar */
         .sidebar {
             width: 250px;
             height: 100vh;
@@ -24,7 +23,6 @@
         }
         .sidebar h2 {
             text-align: center;
-            margin-bottom: 20px;
         }
         .sidebar ul {
             list-style: none;
@@ -38,7 +36,6 @@
             text-align: center;
             border-radius: 5px;
         }
-        /* Container */
         .container {
             margin-left: 270px;
             padding: 20px;
@@ -75,7 +72,7 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-        .form-group input {
+        .form-group input, .form-group select {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -99,11 +96,10 @@
     </style>
 </head>
 <body>
-
-    <!-- Sidebar -->
     <div class="sidebar">
         <h2>Unieq Cell</h2>
         <ul>
+            <li>Login</li>
             <li>Dashboard</li>
             <li>Transaksi</li>
             <li>Katalog Produk</li>
@@ -112,12 +108,9 @@
             <li>Pembelian</li>
         </ul>
     </div>
-
-    <!-- Halaman Pembayaran -->
     <div class="container">
         <div class="box">
             <h3>Pembayaran ID Transaksi - 81</h3>
-
             <table>
                 <tr>
                     <th>No.</th>
@@ -132,25 +125,28 @@
                     <td>Rp 22.000</td>
                 </tr>
             </table>
-
             <div class="total">
                 <p><strong>Total Harga: Rp 22.000</strong></p>
             </div>
-
             <div class="form-group">
+                <label for="metode">Metode Pembayaran</label>
+                <select id="metode" onchange="toggleBayarField()">
+                    <option value="tunai">Tunai</option>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="ewallet">E-Wallet</option>
+                </select>
+            </div>
+            <div class="form-group" id="bayar-group">
                 <label for="bayar">Bayar</label>
                 <input type="number" id="bayar" placeholder="Masukkan jumlah uang" oninput="hitungKembalian()">
             </div>
-
-            <div class="form-group">
+            <div class="form-group" id="kembalian-group">
                 <label for="kembalian">Kembalian</label>
                 <input type="text" id="kembalian" readonly>
             </div>
-
             <button class="btn" onclick="konfirmasiBayar()"><i class="fas fa-paper-plane"></i> Bayar</button>
         </div>
     </div>
-
     <script>
         function hitungKembalian() {
             let totalHarga = 22000;
@@ -165,14 +161,31 @@
         }
 
         function konfirmasiBayar() {
+            let metode = document.getElementById("metode").value;
             let bayar = document.getElementById("bayar").value;
-            if (bayar >= 22000) {
-                alert("Pembayaran berhasil! Terima kasih telah berbelanja di Unieq Cell.");
+            
+            if (metode === "tunai" && bayar >= 22000) {
+                alert("Pembayaran tunai berhasil! Terima kasih telah berbelanja di Unieq Cell.");
+            } else if (metode !== "tunai") {
+                alert("Pembayaran melalui " + metode + " berhasil! Silakan lakukan transaksi sesuai instruksi.");
             } else {
                 alert("Uang yang dimasukkan kurang. Silakan periksa kembali.");
             }
         }
-    </script>
 
+        function toggleBayarField() {
+            let metode = document.getElementById("metode").value;
+            let bayarGroup = document.getElementById("bayar-group");
+            let kembalianGroup = document.getElementById("kembalian-group");
+            
+            if (metode === "tunai") {
+                bayarGroup.style.display = "block";
+                kembalianGroup.style.display = "block";
+            } else {
+                bayarGroup.style.display = "none";
+                kembalianGroup.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
