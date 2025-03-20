@@ -1,0 +1,87 @@
+/* Global Style */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.register-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin: 8px 0 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #e73370;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background-color: #e73370;
+}
+
+/* Redirect to Login After Register */
+.register-btn:active {
+  background-color: #d91c5c;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #ff4081;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

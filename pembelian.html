@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Riwayat Transaksi - Unieq</title>
-    <link rel="stylesheet" href="css/riwayat_transaksi.css" />
+    <title>Pembelian - Unieq</title>
+    <link rel="stylesheet" href="css/pembelian.css" />
   </head>
   <body>
     <div class="sidebar">
@@ -12,9 +12,9 @@
       <ul>
         <li><a href="dashboard.html">Dashboard</a></li>
         <li><a href="katalog.html">Katalog</a></li>
-        <li><a href="pembelian.html">Keranjang Pembelian</a></li>
+        <li class="active"><a href="#">Keranjang Pembelian</a></li>
         <li><a href="pembayaran.html">Pembayaran</a></li>
-        <li class="active"><a href="#">Riwayat Transaksi</a></li>
+        <li><a href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
         <li><a href="#">Stok Produk</a></li>
         <li><a href="#">Pengaturan</a></li>
       </ul>
@@ -22,42 +22,36 @@
 
     <div class="main-content">
       <div class="header">
-        <h2>Riwayat Transaksi</h2>
-        <input type="text" placeholder="Cari transaksi..." class="search-box" />
+        <h2>Keranjang Pembelian</h2>
+        <input type="text" placeholder="Cari produk..." class="search-box" />
       </div>
 
       <table>
         <thead>
           <tr>
             <th>No</th>
-            <th>ID Transaksi</th>
-            <th>Tanggal</th>
-            <th>Total Harga</th>
-            <th>Metode Pembayaran</th>
-            <th>Kembalian</th>
-            <th>User</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
             <th>Aksi</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>77</td>
-            <td>06/03/2025</td>
+            <td>Pulsa 10.000</td>
             <td>Rp 11.000</td>
-            <td>QRIS</td>
-            <td>Rp 9.000</td>
-            <td>Admin</td>
+            <td><input type="number" value="1" min="1" class="qty" /></td>
+            <td>Rp 11.000</td>
             <td>
-              <button class="detail">Detail</button>
-              <button class="edit">Ubah</button>
-              <button class="delete">Hapus</button>
+              <button class="buy">Bayar Sekarang</button>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <script src="js/riwayat_transaksi.js"></script>
+    <script src="js/pembelian.js"></script>
   </body>
 </html>

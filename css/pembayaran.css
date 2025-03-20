@@ -48,33 +48,30 @@ body {
 }
 
 /* Main Content */
-.main-content {
-  flex: 1;
+.container {
+  flex-direction: column;
+  margin-left: 270px;
+  padding: 30px;
+  width: 100000px;
+}
+
+.box {
+  background: white;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+h3 {
+  color: #ff4081;
 }
 
-.search-box {
-  padding: 8px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Table Styling */
+/* Table */
 table {
   width: 100%;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
 }
 
 thead {
@@ -82,41 +79,46 @@ thead {
   color: white;
 }
 
-thead th {
+th,
+td {
   padding: 12px;
-  text-align: left;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
-tbody tr {
-  border-bottom: 1px solid #ddd;
+/* Form Group */
+.form-group {
+  margin-top: 15px;
 }
 
-tbody td {
-  padding: 12px;
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-tbody tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-button {
-  border: none;
-  padding: 6px 10px;
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #ff4081;
+  color: white;
+  font-size: 18px;
+  border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.detail {
-  background: #17a2b8;
-  color: white;
-}
-
-.edit {
-  background: #28a745;
-  color: white;
-}
-
-.delete {
-  background: #dc3545;
-  color: white;
+.btn:hover {
+  background: #e73370;
 }

@@ -99,24 +99,22 @@ tbody tr:nth-child(even) {
   background: #f9f9f9;
 }
 
-button {
+.qty {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.buy {
+  background: #28a745;
+  color: white;
   border: none;
   padding: 6px 10px;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.detail {
-  background: #17a2b8;
-  color: white;
-}
-
-.edit {
-  background: #28a745;
-  color: white;
-}
-
-.delete {
-  background: #dc3545;
-  color: white;
+.buy:hover {
+  background: #218838;
 }
