@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelian - Uneq</title>
+    <link rel="stylesheet" href="css/pembelian.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Unieq</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li class="active"><a href="#">Pembelian</a></li>
+        <li><a href="pembayaran.html">Pembayaran</a></li>
+        <li><a href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
+        <li><a href="#">Stok Produk</a></li>
+        <li><a href="#">Pengaturan</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <h2>Pembelian</h2>
+        <input type="text" placeholder="Cari produk..." class="search-box" />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Pulsa 10.000</td>
+            <td>Rp 11.000</td>
+            <td><input type="number" value="1" min="1" class="qty" /></td>
+            <td>Rp 11.000</td>
+            <td>
+              <button class="buy">Bayar Sekarang</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Pulsa 20.000</td>
+            <td>Rp 21.000</td>
+            <td><input type="number" value="1" min="1" class="qty" /></td>
+            <td>Rp 21.000</td>
+            <td>
+              <button class="buy">Bayar Sekarang</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/pembelian.js"></script>
+  </body>
+</html>
