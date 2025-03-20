@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Stok Produk</title>
+    <link rel="stylesheet" href="css/stok_produk.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Uneq Cell</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="katalogs.html">Katalog</a></li>
+        <li><a href="pembelian.html">Keranjang Pembelian</a></li>
+        <li><a href="pembayaran.html">Pembayaran</a></li>
+        <li><a href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
+        <li class="active"><a href="#">Stok Produk</a></li>
+        <li><a href="#">Pengaturan</a></li>
+      </ul>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="main-content">
+      <h2>Produk Stok</h2>
+      <button class="add-btn">+ Tambah Produk Baru</button>
+
+      <input type="text" id="searchBox" placeholder="Cari produk" />
+
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Nama Produk</th>
+            <th>Harga Beli</th>
+            <th>Harga Jual</th>
+            <th>Stok</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="productTable">
+          <!-- Data akan dimuat melalui script.js -->
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageNumber">1</span>
+        <button id="nextPage">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
