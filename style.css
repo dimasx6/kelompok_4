@@ -1,0 +1,87 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #2b4fff;
+  color: white;
+  padding-top: 20px;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 12px 20px;
+}
+.sidebar ul li:hover {
+  background-color: #1f38c5;
+  cursor: pointer;
+}
+.main {
+  margin-left: 240px;
+  padding: 20px;
+}
+.top-bar {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.laporan-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+input[type="date"] {
+  padding: 5px;
+  margin: 5px;
+}
+.btn {
+  background-color: #2b4fff;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.report {
+  margin-top: 20px;
+}
+.report h6{
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #a3a3a3;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+.print-btn {
+  background-color: green;
+  color: white;
+  padding: 5px 15px;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+}

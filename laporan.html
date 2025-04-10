@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan - Unieq</title>
+  <link rel="stylesheet" href="/laporanPenjualan/style.css">
+  <script defer src="/laporanPenjualan/script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Unieq</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>katalog</li>
+      <li>Transaksi </li>
+      <li>Riwayat</li>
+      <li>stok Produk</li>
+      <li>Laporan</li>
+    </ul>
+  </div>
+  <div class="main">
+    
+    <div class="laporan-box">
+      <h2> Laporan Penjualan </h2>
+      
+      <label>Dari Tanggal <input type="date" value="2023-05-23"></label>
+      <label>Sampai Tanggal <input type="date" value="2023-05-30"></label>
+      <button class="btn" onclick="filterData()">Filter</button>
+      
+      <div class="report">
+          <h6>Laporan Yuda Cell - Dari Tanggal 2023-05-23 Sampai Tanggal 2023-05-30 </h6>
+        <p>Omset: Rp. 186.000</p>
+        <p>Laba: Rp. 23.306</p>
+        <p>Produk Terlaku: Voucher Tri Happy 3GB 3HR (1)</p>
+        <div class="print-btn" onclick="window.print()">Print</div>
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Tanggal Transaksi</th>
+              <th>Total Harga</th>
+              <th>Bayar</th>
+              <th>Kembalian</th>
+              <th>Detail Transaksi</th>
+              <th>User</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>2023-05-23 16:12:14</td><td>Rp. 11.000</td><td>Rp. 12.000</td><td>Rp. 1.000</td><td>Voucher Tri Happy 3GB 3HR (1)</td><td>admin</td></tr>
+            <tr><td>2</td><td>2023-05-23 16:43:38</td><td>Rp. 30.000</td><td>Rp. 30.000</td><td>Rp. 0</td><td>PLN 20K (1), Voucher Indosat 1GB 2HR (1)</td><td>admin</td></tr>
+            <tr><td>3</td><td>2023-05-23 16:44:13</td><td>Rp. 22.000</td><td>Rp. 22.000</td><td>Rp. 0</td><td>Voucher XL 4.5GB 7HR (1)</td><td>admin</td></tr>
+            <tr><td>4</td><td>2023-05-23 16:46:39</td><td>Rp. 11.000</td><td>Rp. 11.000</td><td>Rp. 0</td><td>Voucher Tri Happy 3GB 3HR (1)</td><td>admin</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
